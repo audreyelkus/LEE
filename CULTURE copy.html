@@ -1,0 +1,47 @@
+<head>
+  <title>CULTURE</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  <div id = userToDo ></div>
+  
+    <div id = eventsDiv>
+        {{eventList}}
+        <form class = "search" > 
+        <input type= "text" name = "text" placeholder = "enter search term">
+        </form>
+    </div>
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<!--Audrey and Lee Collaboration-->
+
+<template name="checkList">
+    {{#each userTasks}}  
+    <!-- display task for AUD -->
+    {{/each}}
+<!-- this is where the checklist will go-->
+</template>
+
+
+<template name="eventList">
+    {{#each eventList}}
+    <!-- display task for Lee -->
+
+    {{/each}}
+<!-- this is where the events list will go-->
+</template>
+
+
+<template name="Leaderboard">
+    {{#each topUsers}}
+<!-- DIANA DISPLAY PLAYER -->
+    {{/each}}
+<!-- this is where the leaderboard will go-->
+</template>
